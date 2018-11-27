@@ -7,14 +7,19 @@
 [ci]:      https://travis-ci.org/dainemawer/postcss-smart-variables
 
 ```css
+
+:root {
+    --primary-color: #FF0000;
+}
+
 .foo {
-    /* Input example */
+    background-color: color( var(--primary-color) blackness(60%));
 }
 ```
 
 ```css
 .foo {
-  /* Output example */
+  background-color: #990000
 }
 ```
 
